@@ -74,7 +74,7 @@ const Blog = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 col-12">
-                            <Sidebar />
+                            <Sidebar blogs={blogs} />
                         </div>
                     </div>
                 </div>

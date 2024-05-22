@@ -1,6 +1,21 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import TinyBlogCard from "@/components/specific/Blog/TinyBlogCard";
+import TinyNewsletter from "@/components/specific/Newsletter/TinyNewsletter";
 
-const Sidebar = () => {
+interface Blog {
+    id: string;
+    image: string;
+    createdDate: string;
+    author: string;
+    title: string;
+    summary: string;
+}
+
+const Sidebar = ({ blogs, ...props }: {
+    blogs: Blog[]
+}) => {
     return (
         <div className="main-sidebar">
             <div className="single-widget search">
@@ -11,7 +26,7 @@ const Sidebar = () => {
                         name="search"
                     />
                     <button className="button">
-                        <i className="fa fa-search"></i>
+                        <FontAwesomeIcon icon={faSearch} />
                     </button>
                 </form>
             </div>
@@ -36,35 +51,9 @@ const Sidebar = () => {
             </div>
             <div className="single-widget recent-post">
                 <h3 className="title">Recent post</h3>
-                <div className="single-post">
-                    <div className="image">
-                        <img
-                            src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg"
-                            alt="#"
-                        />
-                    </div>
-                    <div className="content">
-                        <h5>
-                            <a href="#">Lorem ipsum dolor sit amet.</a>
-                        </h5>
-                        <ul className="comment">
-                            <li>
-                                <i
-                                    className="fa fa-calendar"
-                                    aria-hidden="true"
-                                ></i>
-                                2024/05/11 11:23
-                            </li>
-                            <li>
-                                <i
-                                    className="fa fa-user"
-                                    aria-hidden="true"
-                                ></i>
-                                Anonymous
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                {blogs.map(blog =>
+                    <TinyBlogCard blog={blog} />
+                )}
             </div>
             <div className="single-widget side-tags">
                 <h3 className="title">Tags</h3>
@@ -82,25 +71,8 @@ const Sidebar = () => {
                     </ul>
                 </form>
             </div>
-            <div className="single-widget newsletter">
-                <h3 className="title">Newslatter</h3>
-                <div className="letter-inner">
-                    <h4>
-                        Subscribe & get news <br />
-                        latest updates.
-                    </h4>
-                    <form method="POST" action="#" className="form-inner">
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="Enter your email"
-                        />
-                        <button type="submit" className="btn">
-                            Submit
-                        </button>
-                    </form>
-                </div>
-            </div>
+
+            <TinyNewsletter />
         </div>
     );
 };

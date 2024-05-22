@@ -233,6 +233,10 @@ Version:1.0
     border-radius: 0px;
     text-transform: uppercase;
 }
+.btn.btn-wide {
+    display: block;
+    width: 100%;
+}
 
 .btn:hover {
     color: #fff;
@@ -5278,6 +5282,10 @@ Version:1.0
     margin-bottom: 40px;
     border-radius: 5px;
     padding-left: 95px;
+}
+
+.blog-single .comments .single-comment.single-comment-child {
+    margin-left: 40px;
 }
 
 .blog-single .comments .single-comment.left {

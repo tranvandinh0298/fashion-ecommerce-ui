@@ -3,7 +3,8 @@
 import React from 'react';
 import Select from 'react-select';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faHeart, faShoppingBag, faSignIn, faSignInAlt, faHeadphonesAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faHeart, faShoppingBag, faSignIn, faSignInAlt, faHeadphonesAlt, faEnvelope, faRemove } from '@fortawesome/free-solid-svg-icons';
+import Image from 'next/image'
 
 const options = [
     { value: 'all', label: 'Tất cả' },
@@ -55,8 +56,9 @@ const Header = () => {
                         <div className="col-lg-2 col-md-2 col-12">
                             <div className="logo">
                                 <a href="#"
-                                ><img src="images/logo.png" alt="logo"
-                                    /></a>
+                                >
+                                    <Image src="/images/logo.png" width={110} height={40} alt="Logo" />
+                                </a>
                             </div>
                             <div className="search-top">
                                 <div className="top-search">
@@ -111,12 +113,13 @@ const Header = () => {
                                                     href="#"
                                                     className="remove"
                                                     title="Remove this item"
-                                                ><i className="fa fa-remove"></i></a>
+                                                >
+                                                    <FontAwesomeIcon icon={faRemove} />
+                                                </a>
                                                 <a className="cart-img" href="#"
-                                                ><img
-                                                        src="https://t4.ftcdn.net/jpg/05/17/53/57/360_F_517535712_q7f9QC9X6TQxWi6xYZZbMmw5cnLMr279.jpg"
-                                                        alt="#"
-                                                    /></a>
+                                                >
+                                                    <Image src="" width={70} height={70} alt="https://t4.ftcdn.net/jpg/05/17/53/57/360_F_517535712_q7f9QC9X6TQxWi6xYZZbMmw5cnLMr279.jpg" />
+                                                </a>
                                                 <h4>
                                                     <a href="#" target="_blank"
                                                     >Áo khoác</a>
@@ -154,12 +157,12 @@ const Header = () => {
                                                     href="#"
                                                     className="remove"
                                                     title="Remove this item"
-                                                ><i className="fa fa-remove"></i></a>
-                                                <a className="cart-img" href="#"
-                                                ><img
-                                                        src="https://t4.ftcdn.net/jpg/05/17/53/57/360_F_517535712_q7f9QC9X6TQxWi6xYZZbMmw5cnLMr279.jpg"
-                                                        alt="#"
-                                                    /></a>
+                                                >
+                                                    <FontAwesomeIcon icon={faRemove} />
+                                                </a>
+                                                <a className="cart-img" href="#">
+                                                    <Image src="" width={70} height={70} alt="https://t4.ftcdn.net/jpg/05/17/53/57/360_F_517535712_q7f9QC9X6TQxWi6xYZZbMmw5cnLMr279.jpg" />
+                                                </a>
                                                 <h4>
                                                     <a href="#" target="_blank"
                                                     >quần áo</a>

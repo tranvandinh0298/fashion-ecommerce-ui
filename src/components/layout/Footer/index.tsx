@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react'
+import Image from 'next/image'
 
 const Footer = () => {
     return (
@@ -11,11 +12,9 @@ const Footer = () => {
                         <div className="col-lg-5 col-md-6 col-12">
                             <div className="single-footer about">
                                 <div className="logo">
-                                    <a href="index.html"
-                                    ><img
-                                            src="images/avatar.png"
-                                            alt="#"
-                                        /></a>
+                                    <a href="index.html">
+                                        <Image src="/images/avatar.png" width={80} height={80} alt="#" />
+                                    </a>
                                 </div>
                                 <p className="text">Liên hệ với chúng tôi</p>
                                 <p className="call">
@@ -85,10 +84,7 @@ const Footer = () => {
                             </div>
                             <div className="col-lg-6 col-12">
                                 <div className="right">
-                                    <img
-                                        src="images/payments.png"
-                                        alt="#"
-                                    />
+                                    <Image src="/images/payments.png" width={272} height={20} alt="#" />
                                 </div>
                             </div>
                         </div>
