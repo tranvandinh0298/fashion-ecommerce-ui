@@ -233,6 +233,7 @@ Version:1.0
     border-radius: 0px;
     text-transform: uppercase;
 }
+
 .btn.btn-wide {
     display: block;
     width: 100%;
@@ -241,6 +242,11 @@ Version:1.0
 .btn:hover {
     color: #fff;
     background: var(--primary-color);
+}
+
+.btn i,
+.btn svg {
+    margin-left: 5px;
 }
 
 #scrollUp {
@@ -1797,6 +1803,45 @@ Version:1.0
 /*======================================
    Start Small Banner CSS
 ========================================*/
+/* Banner Sliding */
+#banner .carousel-inner {
+    background: #000000;
+    color: black;
+}
+
+#banner .carousel-inner {
+    height: 550px;
+}
+
+#banner .carousel-inner img {
+    width: 100% !important;
+    opacity: 0.8;
+}
+
+#banner .carousel-inner .carousel-caption {
+    bottom: 20%;
+    width: auto;
+    right: unset;
+}
+
+#banner .carousel-inner .carousel-caption h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 100%;
+    /* color: #F7941D; */
+    color: #1e1e1e;
+}
+
+#banner .carousel-inner .carousel-caption p {
+    font-size: 18px;
+    color: black;
+    margin: 28px 0 28px 0;
+}
+
+#banner .carousel-indicators {
+    bottom: 70px;
+}
+
 .small-banner {
     padding: 30px 0;
     padding-bottom: 0;

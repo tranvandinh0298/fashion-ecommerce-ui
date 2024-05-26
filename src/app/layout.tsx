@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css'; // Import the CSS
 import "styles/reset.css";
+import "styles/animate.css";
 import "styles/styles.css";
 import Header from "components/layout/Header";
 import Footer from "components/layout/Footer";
