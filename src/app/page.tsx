@@ -46,8 +46,6 @@ export default function Home() {
         },
     ];
 
-    const LargeBanner = dynamic(() => import('@/components/specific/Banner/LargeBanner'), { ssr: true });
-
     return (
         <main>
             {/* <Slider id="banner" data={sliders} /> */}

@@ -5,5 +5,6 @@ export interface BannerModel extends BaseModel{
     title: string;
     slug: string;
     photo: string;
+    link: string;
     description: string;
 }

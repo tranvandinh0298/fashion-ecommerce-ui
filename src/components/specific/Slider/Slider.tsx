@@ -14,18 +14,18 @@ import { propTypes } from "react-bootstrap/esm/Image";
 
 type Props = {
     id: string;
-    data: PageResponse<BannerModel>;
+    data: BannerModel[];
 };
 
 const Slider = ({ id, data, ...props }: Props) => {
     console.log(data);
     return (
         <section id={id}>
-            Banner
+            banner
             {/* <Carousel slide={false} wrap={true}>
                 {data.map((item) => (
                     <Carousel.Item>
-                        <img src={item.image} alt="#" />
+                        <img src={item.photo} alt="#" />
                         <Carousel.Caption>
                             <h1 className="wow fadeInDown">{item.title}</h1>
                             <p>{item.description}</p>

@@ -6,7 +6,7 @@ export class BannerRepository {
     private endPoint = "http://localhost:8080/v1/api/banners";
     async getAllBanners(requestData: PageRequest): Promise<PageResponse<BannerModel>> {
         const response = await fetch(this.endPoint, {
-            method: 'POST',
+            method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
             },
