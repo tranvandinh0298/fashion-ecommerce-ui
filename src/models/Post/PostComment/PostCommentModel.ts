@@ -1,6 +1,6 @@
 import { BaseModel } from "@/models/BaseModel";
 
-export interface PostComment extends BaseModel {
+export interface PostCommentModel extends BaseModel {
     postCommentId: number;
     userId: string;
     postId: string;

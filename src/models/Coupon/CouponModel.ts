@@ -1,6 +1,6 @@
 import { BaseModel } from "../BaseModel";
 
-export interface Coupon extends BaseModel{
+export interface CouponModel extends BaseModel{
     couponId: number;
     code: string;
     type: string;

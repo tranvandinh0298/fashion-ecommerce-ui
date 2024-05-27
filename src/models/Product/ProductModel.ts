@@ -1,6 +1,6 @@
 import { BaseModel } from "../BaseModel";
 
-export interface Product extends BaseModel{
+export interface ProductModel extends BaseModel{
     productId: number;
     title: string;
     slug: string;

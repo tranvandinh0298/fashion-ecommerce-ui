@@ -1,6 +1,6 @@
 import { BaseModel } from "../BaseModel";
 
-export interface Category extends BaseModel{
+export interface CategoryModel extends BaseModel{
     categoryId: number;
     title: string;
     slug: string;

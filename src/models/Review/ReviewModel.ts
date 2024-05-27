@@ -1,6 +1,6 @@
 import { BaseModel } from "../BaseModel";
 
-export interface Review extends BaseModel{
+export interface ReviewModel extends BaseModel{
     reviewId: number;
     userId: number;
     productId: number;

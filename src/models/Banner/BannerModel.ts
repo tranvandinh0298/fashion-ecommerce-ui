@@ -1,6 +1,6 @@
 import { BaseModel } from '../BaseModel';
 
-export interface Banner extends BaseModel{
+export interface BannerModel extends BaseModel{
     bannerId: number;
     title: string;
     slug: string;

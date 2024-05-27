@@ -1,6 +1,6 @@
 import { BaseModel } from "../BaseModel";
 
-export interface Order extends BaseModel{
+export interface OrderModel extends BaseModel{
     orderId: number;
     orderNumber: number;
     userId: number;
