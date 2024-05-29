@@ -17,7 +17,7 @@ const LargeBanner = () => {
         const fetchData = async () => {
             const bannerService = new BannerService();
             const filters: Filter[] = [];
-            const sorts: Sort[] = [{ key: 'createdAt', direction: 'desc' }];
+            const sorts: Sort[] = [{ key: 'createdAt', direction: 'DESC' }];
             const page = 0;
             const size = 3;
 
@@ -36,20 +36,5 @@ const LargeBanner = () => {
         <Slider id="large-banner" data={pageResponse?.data?.content} />
     )
 }
-
-export const getServerSideProps: GetServerSideProps = async () => {
-    const bannerService = new BannerService();
-    const filters: Filter[] = [];
-    const sorts: Sort[] = [{ key: 'createdAt', direction: 'desc' }];
-    const page = 0;
-    const size = 3;
-    const apiResponse = await bannerService.getBannersWithFilters(filters, sorts, page, size);
-
-    return {
-        props: {
-            apiResponse,
-        },
-    };
-};
 
 export default LargeBanner

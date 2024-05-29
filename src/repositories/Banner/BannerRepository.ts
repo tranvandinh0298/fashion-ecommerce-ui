@@ -5,8 +5,8 @@ import { PageResponse } from "@/models/Http/PageResponse";
 export class BannerRepository {
     private endPoint = "http://localhost:8080/v1/api/banners";
     async getAllBanners(requestData: PageRequest): Promise<PageResponse<BannerModel>> {
-        const response = await fetch(this.endPoint, {
-            method: 'GET',
+        const response = await fetch(`${this.endPoint}/retrieve`, {
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },

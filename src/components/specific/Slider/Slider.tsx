@@ -21,14 +21,13 @@ const Slider = ({ id, data, ...props }: Props) => {
     console.log(data);
     return (
         <section id={id}>
-            banner
             {/* <Carousel slide={false} wrap={true}>
-                {data.map((item) => (
+                {data.map((item, index) => (
                     <Carousel.Item>
                         <img src={item.photo} alt="#" />
                         <Carousel.Caption>
                             <h1 className="wow fadeInDown">{item.title}</h1>
-                            <p>{item.description}</p>
+                            <div>{item.description}</div>
                             <a
                                 className="btn btn-lg fadeInUpBig"
                                 href={item.link}
