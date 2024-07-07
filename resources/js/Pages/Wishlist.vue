@@ -12,6 +12,6 @@ export default {
 
 <template>
     <div>
-        Register
+        Wishlist
     </div>
 </template>

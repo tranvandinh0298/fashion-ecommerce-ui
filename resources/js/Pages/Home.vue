@@ -12,6 +12,6 @@ export default {
 
 <template>
     <div>
-        Register
+        <i class="fa-solid fa-house-user"></i> Home
     </div>
 </template>

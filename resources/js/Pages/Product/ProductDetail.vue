@@ -12,6 +12,6 @@ export default {
 
 <template>
     <div>
-        Register
+        ProductDetail
     </div>
 </template>
